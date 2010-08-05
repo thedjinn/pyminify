@@ -1,0 +1,3 @@
+pyminify is a Python script to minify JavaScript files. It uses the Google Closure and the ScriptDiet web-based minifiers in that order.
+
+Usage: pyminify.py <input.js> <output.js>
