@@ -14,7 +14,12 @@ import sys
 import urllib
 import tempfile
 from StringIO import StringIO
-import pycurl
+
+try:
+	import pycurl
+except ImportError:
+	print "You need the pycurl package for pyminify to work correctly."
+	raise SystemExit
 
 def post(url,data=None,mpdata=None):
 	""" Do an http post to url with given data and return the result """
