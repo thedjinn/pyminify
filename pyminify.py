@@ -76,7 +76,7 @@ if __name__ == '__main__':
 	print "grand total: %d -> %d (%.1f%% of original)"%(origsize,compressorsize,float(compressorsize)/float(origsize)*100.0)
 	
 	try:
-		open(outfile,"w").write(closure)
+		open(outfile,"w").write(compressor)
 	except IOError:
 		print "Error writing output file"
 		raise SystemExit
